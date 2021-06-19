@@ -1,0 +1,7 @@
+body {
+    display: grid;
+    
+}
+body > div.page-banner {
+    background-color: var(--color-two);
+}

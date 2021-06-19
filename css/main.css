@@ -1,0 +1,40 @@
+@font-face {
+	font-family: CountrysideTwo;
+	src: url("../fonts/CountrysideTwo.ttf");
+}
+@font-face {
+	font-family: Myriad;
+	src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+}
+
+:root {
+	--color-one: #42210b;
+	--color-two: #8c6239;
+	--color-three: #ffc88c;
+	--font-one: CountrysideTwo;
+	--font-two: Myriad
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-one);
+}
+.top-bar {
+	height: 80px;
+	display: grid;
+	place-items: center;
+}
+.top-bar > h1 {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: normal;
+	font-family: var(--font-one);
+	font-style: normal;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.top-bar a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 2rem;
+}

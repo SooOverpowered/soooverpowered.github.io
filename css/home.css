@@ -5,39 +5,35 @@
 	background-color: var(--color-three);
 }
 
-.splash-screen > .left-splash-container {
+.left-splash-container {
 	background-color: var(--color-two);
 }
-.splash-screen > .right-splash-container {
+
+.right-splash-container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	row-gap: 10px;
 }
-.splash-screen > .right-splash-container > h2 {
+
+h2 {
 	font-family: var(--font-one);
 	color: var(--color-one);
 	font-stretch: semi-expanded;
-	padding: 0 50px;
+	padding-left: 50px;
 	margin: 0;
 	font-size: 2rem;
 }
-.splash-screen > .right-splash-container > p {
-	color: var(--color-one);
-	text-align: justify;
-	padding: 0 50px;
-	padding-top: 30px;
-	margin: 0;
-	padding-bottom: 20px;
-	font-size: 1.3rem;
-}
-.splash-screen .right-splash-container > div {
+
+.button-container {
 	display: flex;
-	padding: 0 50px;
+	padding: 0 calc(2rem + 50px);
+	column-gap: 10px;
 }
-.splash-screen > .right-splash-container > div  a {
+.button-container a {
 	background-color: var(--color-one);
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px;
 	color: white;
 	text-align: center;
 	text-decoration: none;

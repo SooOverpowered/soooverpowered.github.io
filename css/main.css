@@ -109,6 +109,10 @@ main {
 	transition: 600ms;
 }
 
+.logo .nav-icon:last-child {
+	display: none;
+}
+
 .logo-text {
 	display: inline;
 	position: absolute;
@@ -128,7 +132,19 @@ main {
 	}
 
 	.logo {
+		margin: 0;
+	}
+
+	.logo .nav-icon:nth-child(2) {
 		display: none;
+	}
+
+	.logo .nav-icon:last-child {
+		display: block;
+	}
+
+	.navbar:hover .logo .nav-icon {
+		transform: none;
 	}
 
 	.navbar-nav {
@@ -167,4 +183,3 @@ main {
 		left: 0px;
 	}
 }
-

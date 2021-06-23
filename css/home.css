@@ -1,16 +1,12 @@
 main {
-	width: 100%;
-	height: 100%;
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 }
 
 section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: grid;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	scroll-snap-align: start;
 }
 
@@ -23,23 +19,23 @@ section:first-child {
 	backdrop-filter: blur(4px);
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 .bg-blur h1 {
-	text-align: center;
 	font-family: var(--font-one);
 	font-size: 4rem;
 	color: white;
+	justify-self: center;
+	align-self: end;
+	margin: 0;
+	text-align: center;
 }
 
 /* from here is arrow */
 .arrow-container {
-	position: absolute;
-	top: 58%;
+	justify-self: center;
 	width: 24px;
 	height: 24px;
 }
@@ -122,13 +118,10 @@ section:first-child {
 
 @media only screen and (max-width: 600px) {
 	.arrow-container {
-		top: auto;
-		bottom: 10rem;
-		left: 50%;
-		transform: translateX(-100%);
+		transform: translateX(-50%);
 	}
 
 	.bg-blur {
-		align-items: flex-start;
+		grid-template-rows: 2fr 1fr;
 	}
 }

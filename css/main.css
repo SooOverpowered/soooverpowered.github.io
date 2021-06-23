@@ -32,6 +32,7 @@ body {
 
 main {
 	margin-left: 6rem;
+	width: calc(100vw - 6rem);
 }
 
 .navbar {
@@ -157,6 +158,8 @@ main {
 
 	main {
 		margin: 0;
+		width: 100vw;
+		height: calc(100vh - 5rem);
 	}
 }
 
@@ -181,5 +184,10 @@ main {
 
 	.navbar:hover .logo-text {
 		left: 0px;
+	}
+
+	main {
+		height: 100%;
+		width: calc(100vw - 6rem);
 	}
 }

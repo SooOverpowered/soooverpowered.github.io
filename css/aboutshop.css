@@ -24,9 +24,39 @@ section {
 .blur-box {
 	height: 60%;
 	width: 300px;
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.5);
 	border-color: black ;
 	border-style: double;
 	display: grid;
 	grid-template-rows: 1fr 5fr;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.blur-box h1,h2 {
+	margin-bottom: 0;
+}
+
+.blur-box p {
+	margin-top: 10px;
+}
+
+address {
+	margin-top: 10px;
+}
+
+address a {
+	color: black;
+}
+
+@media only screen and (max-width: 600px) {
+	.blur-box {
+		width: 300px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.blur-box {
+		width: 500px;
+	}
 }

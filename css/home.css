@@ -126,4 +126,8 @@ section:first-child {
 		left: 50%;
 		transform: translateX(-100%);
 	}
+
+	.bg-blur {
+		align-items: flex-start;
+	}
 }

@@ -31,14 +31,15 @@ body {
 }
 
 main {
-	margin-left: 6rem;
-	width: calc(100vw - 6rem);
+	margin:0;
+	width: 100vw;
 }
 
 .navbar {
 	position: fixed;
-	background-color: var(--color-three);
-	transition: width 600ms ease;
+	background-color: rgba(255,255,255,0);
+	transition: 600ms ease;
+	box-shadow: 1px black ;
 	z-index: 1;
 }
 
@@ -108,7 +109,7 @@ main {
 
 .logo .nav-icon {
 	transform: rotate(0deg);
-	transition: 600ms;
+	transition: 600ms ease;
 }
 
 .logo .nav-icon:last-child {
@@ -119,7 +120,7 @@ main {
 	display: inline;
 	position: absolute;
 	left: -999px;
-	transition: 600ms;
+	transition: 600ms ease;
 }
 
 .navbar:hover .logo .nav-icon {
@@ -131,6 +132,7 @@ main {
 		bottom: 0;
 		width: 100vw;
 		height: 5rem;
+		background-color: rgba(255,255,255,0.3)
 	}
 
 	.logo {
@@ -160,7 +162,7 @@ main {
 	main {
 		margin: 0;
 		width: 100vw;
-		height: calc(100vh - 5rem);
+		height: 100vh;
 	}
 }
 
@@ -173,6 +175,7 @@ main {
 
 	.navbar:hover {
 		width: 20rem;
+		background-color: rgba(255,255,255,0.3);
 	}
 
 	.navbar:hover .link-text {
@@ -189,6 +192,6 @@ main {
 
 	main {
 		height: 100%;
-		width: calc(100vw - 6rem);
+		width: 100%;
 	}
 }

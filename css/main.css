@@ -31,15 +31,15 @@ body {
 }
 
 main {
-	margin:0;
+	margin: 0;
 	width: 100vw;
 }
 
 .navbar {
 	position: fixed;
-	background-color: rgba(255,255,255,0);
+	background-color: rgba(255, 255, 255, 0);
 	transition: 600ms ease;
-	box-shadow: 1px black ;
+	box-shadow: 1px black;
 	z-index: 1;
 }
 
@@ -123,7 +123,8 @@ main {
 	transition: 600ms ease;
 }
 
-.navbar:hover .logo .nav-icon {
+.navbar:hover .logo .nav-icon,
+.navbar:active .logo .nav-icon {
 	transform: rotate(-180deg);
 }
 
@@ -132,7 +133,7 @@ main {
 		bottom: 0;
 		width: 100vw;
 		height: 5rem;
-		background-color: rgba(255,255,255,0.3)
+		background-color: rgba(255, 255, 255, 0.3);
 	}
 
 	.logo {
@@ -173,20 +174,24 @@ main {
 		height: 100vh;
 	}
 
-	.navbar:hover {
+	.navbar:hover,
+	.navbar:active {
 		width: 20rem;
-		background-color: rgba(255,255,255,0.3);
+		background-color: rgba(255, 255, 255, 0.3);
 	}
 
-	.navbar:hover .link-text {
+	.navbar:hover .link-text,
+	.navbar:active .link-text {
 		display: block;
 	}
 
-	.navbar:hover .logo .nav-icon {
+	.navbar:hover .logo .nav-icon,
+	.navbar:active .logo .nav-icon {
 		margin-left: 17rem;
 	}
 
-	.navbar:hover .logo-text {
+	.navbar:hover .logo-text,
+	.navbar:active .logo-text {
 		left: 0px;
 	}
 

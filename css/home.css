@@ -33,7 +33,7 @@ section:first-child {
 	margin: 0;
 	text-align: center;
 	font-smooth: 20px;
-	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
 /* from here is arrow */
@@ -81,12 +81,6 @@ section:first-child {
 	}
 }
 
-@keyframes pulse {
-	to {
-		opacity: 1;
-	}
-}
-
 @media only screen and (max-width: 600px) {
 	.arrow-container {
 		transform: translateX(-50%);
@@ -96,5 +90,11 @@ section:first-child {
 
 	.bg-blur {
 		grid-template-rows: 2fr 1fr;
+	}
+}
+
+@media (hover: none) {
+	.arrow-container {
+		transform: rotate(180deg) translateY(-30%);
 	}
 }

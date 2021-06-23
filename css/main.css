@@ -123,8 +123,7 @@ main {
 	transition: 600ms ease;
 }
 
-.navbar:hover .logo .nav-icon,
-.navbar:active .logo .nav-icon {
+.navbar:hover .logo .nav-iconF{
 	transform: rotate(-180deg);
 }
 
@@ -174,24 +173,20 @@ main {
 		height: 100vh;
 	}
 
-	.navbar:hover,
-	.navbar:active {
+	.navbar:hover {
 		width: 20rem;
 		background-color: rgba(255, 255, 255, 0.3);
 	}
 
-	.navbar:hover .link-text,
-	.navbar:active .link-text {
+	.navbar:hover .link-text {
 		display: block;
 	}
 
-	.navbar:hover .logo .nav-icon,
-	.navbar:active .logo .nav-icon {
+	.navbar:hover .logo .nav-icon {
 		margin-left: 17rem;
 	}
 
-	.navbar:hover .logo-text,
-	.navbar:active .logo-text {
+	.navbar:hover .logo-text {
 		left: 0px;
 	}
 

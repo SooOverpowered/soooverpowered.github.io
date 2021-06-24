@@ -4,14 +4,13 @@ main {
 }
 
 section {
-	display: grid;
 	width: 100%;
 	height: 100%;
 	scroll-snap-align: start;
 }
 
 section:first-child {
-	background-image: url(../img/coffee-3120750-1.jpg);
+	background-image: url(../img/coffee-3120750.jpg);
 	background-size: cover;
 	filter: brightness(140%);
 	box-shadow: inset 0 0 100px black;
@@ -34,6 +33,58 @@ section:first-child {
 	text-align: center;
 	font-smooth: 20px;
 	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.bg-blur h1::after {
+	content: "ORGANIC TILL THE LAST DROP";
+	font-family: var(--font-two);
+	font-size: 1.5rem;
+	display: block;
+	font-weight: normal;
+	letter-spacing: 1rem;
+	word-spacing: 2rem;
+	padding-top: 4rem;
+	text-align: center;
+}
+
+section:nth-child(2) {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+.inner-1 {
+	background-color: rgba(0,0,0,0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.inner-1 h2 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 1rem;
+	word-spacing: 2rem;
+}
+
+.inner-2 {
+	height: 100%;
+	background-image: url("../img/karina-tes-fWTmwgjRkMg-unsplash.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-2 h2 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 1rem;
+	word-spacing: 2rem;
 }
 
 /* from here is arrow */
@@ -90,6 +141,10 @@ section:first-child {
 
 	.bg-blur {
 		grid-template-rows: 2fr 1fr;
+	}
+
+	:root {
+		font-size: 12px;
 	}
 }
 

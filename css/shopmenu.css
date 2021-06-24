@@ -1,0 +1,44 @@
+main {
+	scroll-snap-type: none;
+	overflow-y: scroll;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+section {
+	scroll-snap-align: unset;
+	width: 100%;
+}
+
+.item-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1rem;
+	grid-auto-rows: calc(100vh / 4);
+	margin: 3rem 6rem;
+}
+
+.card {
+	background-color: brown;
+}
+
+.menu-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5rem;
+}
+
+.menu-banner h1 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 1rem;
+	word-spacing: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.menu-banner {
+		padding-top: 6rem;
+	}
+}

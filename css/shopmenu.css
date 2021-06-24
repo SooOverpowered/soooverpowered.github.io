@@ -11,7 +11,7 @@ section {
 	display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     justify-content: space-evenly ;
-    margin: 0 6rem;
+    margin: 1rem 6rem;
     gap:50px;
 
 }

@@ -158,4 +158,8 @@ section:nth-child(2) {
 	.arrow-container {
 		transform: rotate(180deg) translateY(-30%);
 	}
+
+	.bg-blur {
+		grid-template-rows: 2fr 1fr;
+	}
 }

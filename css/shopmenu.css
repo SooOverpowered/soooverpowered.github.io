@@ -10,15 +10,20 @@ section {
 }
 
 .item-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 240px);
-	gap: 1rem;
-	grid-auto-rows: calc(100vh / 4);
-	margin: 3rem 6rem;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start ;
+    gap:12px;
+    margin: 0 6rem;
+
 }
 
 .card {
 	background-color: brown;
+    width: 240px;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 1rem 0 1rem #000000;
 }
 
 .menu-banner {

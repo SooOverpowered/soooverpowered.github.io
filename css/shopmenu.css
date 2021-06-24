@@ -11,7 +11,7 @@ section {
 	display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     justify-content: space-evenly ;
-    margin: 1rem 6rem;
+    margin: 0 6rem;
     gap:50px;
 
 }
@@ -41,10 +41,10 @@ section {
 
 @media only screen and (max-width: 600px) {
 	.menu-banner {
-		padding-top: 6rem;
+		margin-top: 5rem;
 	}
 
     .item-container {
-        margin: auto 1rem;
+        margin: 0 2rem;
     }
 }

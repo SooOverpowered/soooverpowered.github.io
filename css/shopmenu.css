@@ -1,11 +1,9 @@
 main {
-	scroll-snap-type: none;
 	overflow-y: scroll;
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
 section {
-	scroll-snap-align: unset;
 	width: 100%;
 }
 
@@ -45,4 +43,8 @@ section {
 	.menu-banner {
 		padding-top: 6rem;
 	}
+
+    .item-container {
+        margin: auto 1rem;
+    }
 }

@@ -145,10 +145,6 @@ section:nth-child(2) {
 		padding: 0 !important;
 	}
 
-	:root {
-		font-size: 12px;
-	}
-
 	.inner {
 		padding: 0 0 !important;
 	}

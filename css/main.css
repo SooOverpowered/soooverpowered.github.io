@@ -61,6 +61,7 @@ main {
 
 .nav-item:last-child {
 	margin-top: auto;
+	background-color: var(--color-one);
 }
 
 .nav-link {
@@ -83,6 +84,8 @@ main {
 	margin-left: 1.5rem;
 	overflow: hidden;
 	white-space: nowrap;
+	color: #e5e5e5;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6))
 }
 
 .nav-item .link-text {
@@ -122,6 +125,7 @@ main {
 	position: absolute;
 	left: -999px;
 	transition: 600ms ease;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6))
 }
 
 .navbar:hover .logo .nav-iconF {

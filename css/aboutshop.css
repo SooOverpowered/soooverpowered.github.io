@@ -8,7 +8,7 @@ section {
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/coffee-3224527.jpg);
+	background-image: url("../img/coffee-3224527.jpg"); /*Pixabay.com. 2021. Coffee Caffeine Bean - Free photo on Pixabay. [online] Available at: <https://pixabay.com/images/id-3224527/> [Accessed 25 June 2021].*/
 	background-size: cover;
 }
 

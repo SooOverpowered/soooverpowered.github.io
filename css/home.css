@@ -7,10 +7,11 @@ section {
 	width: 100%;
 	height: 100%;
 	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 section:first-child {
-	background-image: url(../img/coffee-3120750.jpg);
+	background-image: url(../img/coffee-3120750.jpg); /*Pixabay. 2021. Coffee Drink Hot - Free photo on Pixabay. [online] Available at: <https://pixabay.com/photos/coffee-drink-hot-cup-cappuccino-3120750/> [Accessed 25 June 2021].*/
 	background-size: cover;
 	filter: brightness(140%);
 	box-shadow: inset 0 0 100px black;
@@ -53,7 +54,7 @@ section:nth-child(2) {
 }
 
 .inner:first-child {
-	background-color: rgba(0,0,0,0.8);
+	background-color: var(--color-six);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -67,12 +68,14 @@ section:nth-child(2) {
 	text-align: center;
 	letter-spacing: 1rem;
 	word-spacing: 2rem;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
 .inner:last-child {
 	height: 100%;
-	background-image: url("../img/karina-tes-fWTmwgjRkMg-unsplash.jpg");
+	background-image: url("../img/woman-4660887.jpg"); /*Pixabay.com. 2021. Woman Wearing Female - Free photo on Pixabay. [online] Available at: <https://pixabay.com/images/id-4660887/> [Accessed 25 June 2021].*/
 	background-size: cover;
+	background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -86,6 +89,60 @@ section:nth-child(2) {
 	text-align: center;
 	letter-spacing: 1rem;
 	word-spacing: 2rem;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+section:nth-child(3) {
+	background-color: var(--color-two);
+	display: grid;
+	grid-template-rows: 50vh 50vh;
+}
+
+.inner2 {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 8rem;
+	align-items: center;
+}
+
+.inner2 img {
+	height: 400px;
+	width: 600px;
+}
+
+.inner2 p {
+	color: black;
+	margin: 0 2rem;
+	font-family: var(--font-two);
+	text-align: left;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	letter-spacing: 0.2rem;
+	font-weight: bold;
+}
+
+section:last-child {
+	background-image: url("../img/portrait-beautiful-young-woman-standing-grey-wall.jpg"); /*Freepik. 2021. Download Portrait Of Beautiful Young Woman Standing On Grey Wall for free. [online] Available at: <https://www.freepik.com/free-photo/portrait-beautiful-young-woman-standing-grey-wall_13813927.htm> [Accessed 25 June 2021].*/
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner3 {
+	padding: 0 6rem;
+}
+
+.inner3 h2 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 1rem;
+	word-spacing: 1rem;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+	line-height: 3rem;
 }
 
 /* from here is arrow */
@@ -133,7 +190,7 @@ section:nth-child(2) {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 	.arrow-container {
 		transform: translateX(-50%);
 		bottom: 0;
@@ -147,6 +204,45 @@ section:nth-child(2) {
 
 	.inner {
 		padding: 0 0 !important;
+	}
+
+	.inner2 {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		gap: 2rem;
+	}
+
+	.inner2:first-child {
+		margin-top: 6rem;
+	}
+
+	.inner2 img {
+		width: 500px;
+		height: 300px;
+	}
+
+	.inner2 p {
+		text-justify: inter-word;
+		text-align: center;
+		letter-spacing: 0.1rem;
+		line-height: 1.5rem;
+	}
+
+	.inner2:last-child {
+		flex-direction: column-reverse;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.inner2 img {
+		width: 250px;
+		height: 180px;
+	}
+
+	.inner3 {
+		padding: 0;
 	}
 }
 

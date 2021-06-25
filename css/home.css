@@ -126,6 +126,7 @@ section:nth-child(4) {
 	text-indent: .5rem;
 	word-spacing: 1rem;
 	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+	padding: 0 6rem;
 }
 
 section:last-child {
@@ -193,12 +194,6 @@ section:last-child {
 
 	.inner {
 		padding: 0 0 !important;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.inner3 {
-		padding: 0;
 	}
 }
 

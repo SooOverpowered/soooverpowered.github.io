@@ -18,7 +18,6 @@
 	--color-six: #37251b;
 	--font-one: CountrysideTwo;
 	--font-two: Myriad;
-	--font-three: "Open Sans";
 	scroll-behavior: smooth;
 	overflow: hidden;
 }
@@ -40,7 +39,6 @@ main {
 	position: fixed;
 	background-color: rgba(255, 255, 255, 0);
 	transition: 600ms ease;
-	box-shadow: 1px black;
 	z-index: 1;
 }
 
@@ -85,7 +83,7 @@ main {
 	overflow: hidden;
 	white-space: nowrap;
 	color: #e5e5e5;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6))
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
 .nav-item .link-text {
@@ -101,7 +99,7 @@ main {
 }
 
 .logo {
-	margin-bottom: 1rem;
+	margin: 0;
 	text-align: center;
 	color: white;
 	font-family: var(--font-one);
@@ -125,7 +123,7 @@ main {
 	position: absolute;
 	left: -999px;
 	transition: 600ms ease;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6))
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
 .navbar:hover .logo .nav-iconF {
@@ -163,7 +161,7 @@ main {
 	.nav-link {
 		justify-content: center;
 	}
-	
+
 	:root {
 		font-size: 12px;
 	}
@@ -176,7 +174,7 @@ main {
 		height: 100vh;
 	}
 
-	.navbar:hover {
+	.navbar:hover, .navbar:focus {
 		width: 20rem;
 		background-color: rgba(255, 255, 255, 0.3);
 	}

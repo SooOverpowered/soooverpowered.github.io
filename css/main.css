@@ -130,7 +130,7 @@ main {
 	transform: rotate(-180deg);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (orientation: portrait) and (max-device-aspect-ratio: 1/1){
 	.navbar {
 		top: 0;
 		width: 100vw;
@@ -167,14 +167,15 @@ main {
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (orientation: landscape) and (min-device-aspect-ratio: 1/1),
+only screen and (orientation: portrait) and (min-device-aspect-ratio: 1/1) {
 	.navbar {
 		top: 0;
 		width: 6rem;
 		height: 100vh;
 	}
 
-	.navbar:hover, .navbar:focus {
+	.navbar:hover{
 		width: 20rem;
 		background-color: rgba(255, 255, 255, 0.3);
 	}

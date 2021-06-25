@@ -190,7 +190,7 @@ section:last-child {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation: portrait) and (max-device-aspect-ratio: 1/1) {
 	.arrow-container {
 		transform: translateX(-50%);
 		bottom: 0;

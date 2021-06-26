@@ -40,7 +40,7 @@ section {
 	);
 }
 
-@media (hover) {
+@media (hover: hover) {
 	.card-content {
 		transform: translateY(55%);
 		transition: 500ms ease;

@@ -25,7 +25,8 @@ section {
 	transition: 200ms ease;
 }
 
-.card:hover {
+.card:hover,
+.card:focus-within {
 	transform: scale(1.08);
 	box-shadow: 1.5rem 1.5rem 1rem 0.5rem rgba(0, 0, 0, 0.4);
 }
@@ -39,6 +40,37 @@ section {
 	);
 }
 
+@media (hover) {
+	.card-content {
+		transform: translateY(55%);
+		transition: 500ms ease;
+	}
+
+	.card:hover .card-content,
+	.card:focus-within .card-content {
+		transform: translateY(0);
+		transition: 500ms ease;
+	}
+
+	.card:focus-within .card-content {
+		transition-duration: 0ms;
+	}
+
+	.card-content > *:not(.card-title) {
+		opacity: 0;
+		transition: 500ms linear;
+	}
+
+	.card:hover .card-content > *:not(.card-title),
+	.card:focus-within .card-content > *:not(.card-title) {
+		opacity: 1;
+	}
+
+	.card-title::after {
+		transform: scaleX(0);
+	}
+}
+
 .card-title {
 	color: white;
 	width: fit-content;
@@ -47,14 +79,21 @@ section {
 	position: relative;
 }
 
-.card-title:after {
+.card-title::after {
 	content: "";
 	position: absolute;
 	height: 3px;
-	bottom: 0;
+	bottom: -2px;
 	left: -1.5rem;
 	width: calc(100% + 1.5rem);
 	background-color: var(--color-two);
+	transform-origin: left;
+	transition: 500ms ease;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+	transform: scaleX(1);
 }
 
 .card-body {
@@ -68,7 +107,7 @@ section {
 	height: 5rem;
 	position: fixed;
 	width: 100vw;
-	top:0;
+	top: 0;
 	background-color: #333333;
 	z-index: 9;
 }
@@ -127,11 +166,11 @@ section {
 
 	.menu-banner::before {
 		content: "";
-		display:block;
+		display: block;
 		background-color: #333333;
 		height: 5rem;
 		position: fixed;
-		top:0;
+		top: 0;
 		width: 100vw;
 	}
 

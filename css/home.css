@@ -194,6 +194,10 @@ section:last-child {
 	.inner {
 		padding: 0 0 !important;
 	}
+
+	.h2-container h2 {
+		padding:0;
+	}
 }
 
 @media (hover: none) {

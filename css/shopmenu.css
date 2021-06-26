@@ -73,7 +73,7 @@ section {
 
 .card-title {
 	color: white;
-	width: fit-content;
+	width: max-content;
 	max-width: 100%;
 	font-family: var(--font-two);
 	position: relative;

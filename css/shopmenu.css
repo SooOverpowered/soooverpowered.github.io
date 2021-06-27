@@ -181,4 +181,8 @@
 	.item-container {
 		margin: 16rem 2rem;
 	}
+
+	:root {
+		font-size: 16px;
+	}
 }

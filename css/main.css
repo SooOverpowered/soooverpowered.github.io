@@ -198,3 +198,386 @@ main {
 		left: 0px;
 	}
 }
+
+/** Home CSS */
+#home {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+}
+
+.home {
+	width: 100%;
+	height: 100%;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+}
+
+.home:first-child {
+	background-image: url(../img/coffee-3120750.jpg); /*Pixabay. 2021. Coffee Drink Hot - Free photo on Pixabay. [online] Available at: <https://pixabay.com/photos/coffee-drink-hot-cup-cappuccino-3120750/> [Accessed 25 June 2021].*/
+	background-size: cover;
+	filter: brightness(140%);
+	box-shadow: inset 0 0 100px black;
+}
+
+.bg-blur {
+	padding: 0 6rem;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.bg-blur h1 {
+	font-family: var(--font-one);
+	font-size: 4rem;
+	color: white;
+	justify-self: center;
+	align-self: end;
+	margin: 0;
+	text-align: center;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.bg-blur h1::after {
+	content: "ORGANIC TILL THE LAST DROP";
+	font-family: var(--font-two);
+	font-size: 1.5rem;
+	display: block;
+	font-weight: normal;
+	letter-spacing: 1rem;
+	text-indent: 1rem;
+	word-spacing: 2rem;
+	padding-top: 4rem;
+	text-align: center;
+}
+
+.home:nth-child(2) {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+.inner:first-child {
+	background-color: var(--color-six);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 6rem;
+}
+
+.inner:first-child h2 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 1rem;
+	text-indent: 1rem;
+	word-spacing: 2rem;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.inner:last-child {
+	height: 100%;
+	background-image: url("../img/woman-4660887.jpg"); /*Pixabay.com. 2021. Woman Wearing Female - Free photo on Pixabay. [online] Available at: <https://pixabay.com/images/id-4660887/> [Accessed 25 June 2021].*/
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 6rem;
+}
+
+.inner:last-child h2 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 1rem;
+	text-indent: 1rem;
+	word-spacing: 2rem;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.home:nth-child(3) {
+	background-image: url("../img/hands-with-coffee-beans-coffee-beans-that-are-dried.jpg"); /*Freepik. 2021. Download Hands With Coffee Beans On Coffee Beans That Are Dried for free. [online] Available at: <https://www.freepik.com/free-photo/hands-with-coffee-beans-coffee-beans-that-are-dried_3711811.htm> [Accessed 25 June 2021]*/
+	background-size: cover;
+	background-position: left;
+}
+
+.home:nth-child(4) {
+	background-image: url("../img/coffee-2358388.jpg"); /*!Pixabay.com. 2021. Coffee Cup Hot - Free photo on Pixabay. [online] Available at: <https://pixabay.com/images/id-2358388/> [Accessed 25 June 2021].*/
+	background-size: cover;
+	background-position: center;
+}
+
+.h2-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	backdrop-filter: brightness(80%);
+}
+
+.h2-container h2 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 0.5rem;
+	text-indent: 0.5rem;
+	word-spacing: 1rem;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+	padding: 0 6rem;
+}
+
+.home:last-child {
+	background-image: url("../img/portrait-beautiful-young-woman-standing-grey-wall.jpg"); /*Freepik. 2021. Download Portrait Of Beautiful Young Woman Standing On Grey Wall for free. [online] Available at: <https://www.freepik.com/free-photo/portrait-beautiful-young-woman-standing-grey-wall_13813927.htm> [Accessed 25 June 2021].*/
+	background-size: cover;
+	background-position: center;
+}
+
+/* from here is arrow */
+.arrow-container {
+	justify-self: center;
+	align-self: end;
+	width: 40px;
+	height: 60px;
+	transform: translateY(-35px);
+}
+
+.chevron {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	opacity: 0;
+	filter: invert(100%);
+	transform: scale3d(0.5, 0.5, 0.5);
+	animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+	animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+	animation: move 3s ease-out 2s infinite;
+}
+
+@keyframes move {
+	25% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 1;
+		transform: translateY(30px);
+	}
+	67% {
+		opacity: 1;
+		transform: translateY(45px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+	}
+}
+
+@media only screen and (orientation: portrait) and (max-device-aspect-ratio: 1/1) {
+	.arrow-container {
+		transform: translateX(-50%);
+		bottom: 0;
+		transform: translateY(-50%);
+	}
+
+	.bg-blur {
+		grid-template-rows: 2fr 1fr;
+		padding: 0 !important;
+	}
+
+	.inner {
+		padding: 0 0 !important;
+	}
+
+	.h2-container h2 {
+		padding: 0;
+	}
+}
+
+@media (hover: none) {
+	.arrow-container {
+		transform: rotate(180deg) translateY(-30%);
+	}
+
+	.bg-blur {
+		grid-template-rows: 2fr 1fr;
+	}
+}
+
+/* About Shop CSS */
+#about {
+	height: 100%;
+}
+
+#about section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/coffee-3224527.jpg"); /*Pixabay.com. 2021. Coffee Caffeine Bean - Free photo on Pixabay. [online] Available at: <https://pixabay.com/images/id-3224527/> [Accessed 25 June 2021].*/
+	background-size: cover;
+}
+
+.bg {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.blur-box {
+	height: 60%;
+	width: 300px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color: black;
+	border-style: double;
+	padding: 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.blur-box h1,
+h2 {
+	margin: 0;
+}
+
+.blur-box p {
+	margin-top: 10px;
+}
+
+address {
+	margin-top: 10px;
+}
+
+address a {
+	color: black;
+}
+
+@media only screen and (max-width: 600px) {
+	.blur-box {
+		width: 300px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.blur-box {
+		width: 500px;
+	}
+}
+
+/*Booking CSS */
+#booking {
+	background-color: #333333;
+}
+
+#booking section {
+	height: calc(100% - 5rem);
+	width: 100%;
+	display: grid;
+	margin-top: 5rem;
+	grid-template-rows: 2fr 1fr;
+}
+
+.booking-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5rem;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	background-color: #333333;
+	z-index: 9;
+	box-shadow: 0 10px 10px -7px black;
+}
+
+.booking-banner h1 {
+	color: white;
+	margin: 0;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 2rem;
+	text-indent: 2rem;
+}
+
+.map-container {
+	background-image: url("../img/coffee-2358388.jpg");
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.form-container {
+	justify-self: center;
+	background-color: whitesmoke;
+	margin: 1rem 0;
+	padding: 1rem;
+	border-radius: 10px;
+	height: max-content;
+	align-self: center;
+}
+
+#booking-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.submit {
+	align-self: center;
+	background-color: var(--color-one);
+	text-decoration: none;
+	color: white;
+	padding: 3px 10px;
+	margin-top: 1rem;
+	border-radius: 5px;
+}
+
+.submit:hover {
+	filter: brightness(90%);
+}
+
+h3 {
+	margin: 0;
+	font-family: var(--font-two);
+	letter-spacing: 0.2rem;
+	text-indent: 0.2rem;
+}
+
+label,
+option {
+	font-family: var(--font-two);
+	font-weight: bold;
+}
+
+input {
+	width: 20rem;
+}
+
+@media only screen and (orientation: portrait) and (max-device-aspect-ratio: 1/1) {
+	.booking-banner {
+		top: 0;
+		padding-top: 5rem;
+	}
+
+	#booking section {
+		height: calc(100% - 10rem);
+		margin-top: 10rem;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.form-container {
+		margin: 0;
+	}
+}

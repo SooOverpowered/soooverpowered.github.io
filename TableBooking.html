@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/booking.css"> -->
     <title>Booking | James' Coffee Shop</title>
 </head>
 
@@ -48,16 +49,39 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main id="booking">
         <section>
-            <h1>Part 1</h1>
+            <div class="map-container"></div>
+            <div class="form-container">
+                <form id="booking-form">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" form="booking-form" required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" form="booking-form" required>
+                    <label for="table">Table</label>
+                    <select name="table" id="table" form="booking-form" size="1" required>
+                        <option hidden disabled selected value> -- select a table -- </option>
+                        <option value="A">A</option>
+                        <option value="A">A</option>
+                        <option value="A">A</option>
+                        <option value="A">A</option>
+                        <option value="A">A</option>
+                        <option value="A">A</option>
+                        <option value="A">A</option>
+                    </select>
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" form="booking-form" rows="3"></textarea>
+                    <a class="submit" href="404.html">
+                        <h3>BOOK</h3>
+                    </a>
+                </form>
+            </div>
+            </div>
         </section>
-        <section>
-            <h1>Part 2</h1>
-        </section>
-        <section>
-            <h1>Part 3</h1>
-        </section>
+        <div class="booking-banner">
+            <h1>BOOKING</h1>
+        </div>
     </main>
 </body>
+
 </html>

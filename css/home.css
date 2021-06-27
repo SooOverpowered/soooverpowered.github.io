@@ -1,16 +1,16 @@
-main {
+#home {
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 }
 
-section {
+.home {
 	width: 100%;
 	height: 100%;
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 }
 
-section:first-child {
+.home:first-child {
 	background-image: url(../img/coffee-3120750.jpg); /*Pixabay. 2021. Coffee Drink Hot - Free photo on Pixabay. [online] Available at: <https://pixabay.com/photos/coffee-drink-hot-cup-cappuccino-3120750/> [Accessed 25 June 2021].*/
 	background-size: cover;
 	filter: brightness(140%);
@@ -48,7 +48,7 @@ section:first-child {
 	text-align: center;
 }
 
-section:nth-child(2) {
+.home:nth-child(2) {
 	display: grid;
 	grid-template-rows: 1fr 2fr;
 }
@@ -94,13 +94,13 @@ section:nth-child(2) {
 	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
-section:nth-child(3) {
+.home:nth-child(3) {
 	background-image: url("../img/hands-with-coffee-beans-coffee-beans-that-are-dried.jpg"); /*Freepik. 2021. Download Hands With Coffee Beans On Coffee Beans That Are Dried for free. [online] Available at: <https://www.freepik.com/free-photo/hands-with-coffee-beans-coffee-beans-that-are-dried_3711811.htm> [Accessed 25 June 2021]*/
 	background-size: cover;
 	background-position: left;
 }
 
-section:nth-child(4) {
+.home:nth-child(4) {
 	background-image: url("../img/coffee-2358388.jpg"); /*!Pixabay.com. 2021. Coffee Cup Hot - Free photo on Pixabay. [online] Available at: <https://pixabay.com/images/id-2358388/> [Accessed 25 June 2021].*/
 	background-size: cover;
 	background-position: center;
@@ -128,7 +128,7 @@ section:nth-child(4) {
 	padding: 0 6rem;
 }
 
-section:last-child {
+.home:last-child {
 	background-image: url("../img/portrait-beautiful-young-woman-standing-grey-wall.jpg"); /*Freepik. 2021. Download Portrait Of Beautiful Young Woman Standing On Grey Wall for free. [online] Available at: <https://www.freepik.com/free-photo/portrait-beautiful-young-woman-standing-grey-wall_13813927.htm> [Accessed 25 June 2021].*/
 	background-size: cover;
 	background-position: center;

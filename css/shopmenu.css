@@ -1,9 +1,9 @@
-main {
+#menu {
 	overflow-y: scroll;
 	background-color: #333333;
 }
 
-section {
+#menu section {
 	width: 100%;
 }
 
@@ -180,6 +180,5 @@ section {
 
 	.item-container {
 		margin: 16rem 2rem;
-		overflow-y: hidden;
 	}
 }

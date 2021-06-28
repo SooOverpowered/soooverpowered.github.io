@@ -23,6 +23,8 @@
 	box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.6);
 	overflow: hidden;
 	transition: 200ms ease;
+	background-size: cover;
+	background-position: center center;
 }
 
 .card:hover,
@@ -190,8 +192,46 @@
 
 /* adding card background*/
 
+.card:first-child {
+	background-image: url(../img/Mis.jpg);
+}
+
 .card:nth-child(2) {
-	background-image: url(../img/198187123_4072872922828012_3144666871172560287_n.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
-	background-size: cover;
-	background-position: center center;
+	background-image: url(../img/ex.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(3) {
+	background-image: url(../img/Boss.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(4) {
+	background-image: url(../img/gf.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(5) {
+	background-image: url(../img/dad.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(6) {
+	background-image: url(../img/mom.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(7) {
+	background-image: url(../img/gm.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(8) {
+	background-image: url(../img/Bob.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(9) {
+	background-image: url(../img/Kim.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(10) {
+	background-image: url(../img/chuck.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+}
+
+.card:nth-child(11) {
+	background-image: url(../img/belle.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
 }

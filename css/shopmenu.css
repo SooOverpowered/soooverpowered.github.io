@@ -98,6 +98,7 @@
 
 .card-body {
 	color: white;
+	font-family: var(--font-two);
 }
 
 .menu-banner {
@@ -185,4 +186,12 @@
 	:root {
 		font-size: 16px;
 	}
+}
+
+/* adding card background*/
+
+.card:nth-child(2) {
+	background-image: url(../img/198187123_4072872922828012_3144666871172560287_n.jpg); /*Freepik. 2021. Download Paper Bag With Coffee Mock Up for free. [online] Available at: <https://www.freepik.com/free-psd/paper-bag-with-coffee-mock-up_13160424.htm> [Accessed 28 June 2021].*/
+	background-size: cover;
+	background-position: center center;
 }

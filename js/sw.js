@@ -2,18 +2,18 @@
 // only change from here down
 const CACHE_NAME = "my-site-v1";
 const CACHE_URLS = [
-	"/",
-	"index.html",
-	"ShopMenu.html",
-	"TableBooking.html",
-	"AboutShop.html",
-	"AboutCoffee.html",
-	"manifest.json",
-	"css/main.css",
-	"css/shopmenu.css",
-	"404.html",
-	"/img/",
-	"/fonts/",
+	"../index.html",
+	"../ShopMenu.html",
+	"../TableBooking.html",
+	"../AboutShop.html",
+	"../AboutCoffee.html",
+	"../manifest.json",
+	"../css/main.css",
+	"../css/shopmenu.css",
+	"../404.html",
+	"../img/",
+	"../fonts/CountrysideTwo.ttf",
+    "../fonts/MYRIADPRO-REGULAR.OTF"
 ];
 
 //DO NOT change any of the code below

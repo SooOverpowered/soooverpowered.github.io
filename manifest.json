@@ -5,7 +5,7 @@
 	"short_name": "James' Coffee",
 	"scope": "/",
 	"display": "fullscreen",
-	"start_url": "https://soooverpowered.github.io/",
+	"start_url": "../index.html",
 	"background_color": "transparent",
 	"theme_color": "transparent",
 	"description": "",

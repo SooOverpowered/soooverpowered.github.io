@@ -7,18 +7,14 @@
 	"display": "fullscreen",
 	"start_url": "../index.html",
 	"background_color": "transparent",
-	"theme_color": "transparent",
+	"theme_color": "white",
 	"description": "",
 	"orientation": "landscape-primary",
 	"related_applications": [],
 	"prefer_related_applications": false,
 	"icons": [
 		{
-			"src": "/favicon.ico",
-			"sizes": "256x256"
-		},
-		{
-			"src": "/favicon.ico",
+			"src": "/svg/coffee-solid.svg",
 			"sizes": "256x256"
 		}
 	]

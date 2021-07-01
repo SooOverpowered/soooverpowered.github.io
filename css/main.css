@@ -605,3 +605,57 @@ input {
 	letter-spacing: 2rem;
 	text-indent: 2rem;
 }
+
+/* Roastery CSS*/
+#coffee {
+	background-color: #333333;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-rows: 5rem 1fr;
+}
+
+#coffee h1 {
+	color: white;
+	margin: 0 6rem;
+	font-family: var(--font-two);
+	text-align: center;
+	letter-spacing: 2rem;
+	text-indent: 2rem;
+}
+
+.roastery-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5rem;
+	width: 100vw;
+	background-color: #333333;
+	z-index: 9;
+	box-shadow: 0 10px 10px -7px black;
+}
+
+.roastery-img {
+	margin: 6rem;
+	margin-top: 5rem;
+	background-image: url("../img/roastery-desktop.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@media only screen and (orientation: portrait) and (max-device-aspect-ratio: 1/1) {
+	.roastery-banner {
+		padding-top: 5rem;
+	}
+
+	#coffee h1 {
+		margin: 0;
+	}
+
+	.roastery-img {
+		margin: 0;
+		margin-top: 5rem;
+		background-image: url("../img/roastery-mobile.jpg");
+	}
+}

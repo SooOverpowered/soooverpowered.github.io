@@ -18,7 +18,7 @@
 
 .card {
 	padding: 10rem 0 0;
-	background-color: brown;
+	background-color: var(--color-six);
 	border-radius: 16px;
 	box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.6);
 	overflow: hidden;
